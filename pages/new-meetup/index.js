@@ -1,13 +1,12 @@
+// our-domain.com/new-meetup
+import NewMeetupForm from '../../components/meetups/NewMeetupForm';
 
-//our-domain.com/new-meetup
-import NewMeetupForm from "../../components/meetups/NewMeetupForm"
+function NewMeetupPage() {
+  function addMeetupHandler(enteredMeetupData) {
+    console.log(enteredMeetupData);
+  }
 
-function NewMeetupPage(){
-function addMeetupHandler(enteredMeetupdata){
-    console.log(enteredMeetupdata);
+  return <NewMeetupForm onAddMeetup={addMeetupHandler} />
 }
 
-return <NewMeetupForm onAddMeetup={addMeetupHandler}/>
-}
-
-export default NewMeetupPage
+export default NewMeetupPage;
